@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ColaboradoresDashboard.master.cs" Inherits="PaginaPia.ColaboradoresDashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <title>Dashboard</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+    <!-- spa CSS Files -->
+    <!--<link href="assets/spa/aos/aos.css" rel="stylesheet">-->
+    <link href="assets/spa/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/spa/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/spa/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/spa/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!--<link href="assets/spa/remixicon/remixicon.css" rel="stylesheet">-->
+    <link href="assets/spa/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <script src="js/bootstrap.min.js"></script>
+    <header id="header" class="fixed-top" style="background-color:#EBC7E8">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Galantha</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="Agenda.aspx">Agenda</a></li>
+                    <li><a class="nav-link scrollto" href="Registro.aspx">Registrar Personas</a></li>                    
+                    <li><a class="nav-link scrollto" href="Index.aspx">Inicio</a></li>
+
+                    <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Júntate para recibir mas información</h4>
+                        <p>Esperamos verte pronto con nosotros</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Unetenos">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Galantha</h3>
+                        <p>
+                            Facultad FACPYA<br>
+                            San Nicolás de los Garza, N.L.<br>
+                            México<br>
+                            <br>
+                            <strong>Teléfono:</strong> +52 81 1122 3344<br>
+                            <strong>Correo:</strong> contacto@nailspa.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Ligas</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i><a href="index.html">Inicio</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="Servicios.html">Servicios</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Otros1</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Otros2</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Búscanos en las Redes Sociales</h4>
+                        <p>Y podrás conocer más sobre nosotros</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/AdaraAcademiaDistribuidora/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Galantha</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    </form>
+
+
+        <!-- Vendor JS Files -->
+    <!-- <script src="assets/spa/aos/aos.js"></script>-->
+    <script src="assets/spa/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/spa/glightbox/js/glightbox.min.js"></script>
+    <!-- <script src="assets/spa/isotope-layout/isotope.pkgd.min.js"></script>-->
+    <script src="assets/spa/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/spa/waypoints/noframework.waypoints.js"></script>-->
+    <!-- <script src="assets/spa/php-email-form/validate.js"></script>-->
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
